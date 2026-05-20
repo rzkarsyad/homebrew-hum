@@ -14,4 +14,12 @@ cask "hum" do
   zap trash: [
     "~/Library/Preferences/com.rzkarsyad.Hum.plist",
   ]
+
+  caveats <<~EOS
+    Hum is not notarized by Apple. If macOS blocks it on first launch:
+
+      brew install --cask --no-quarantine rzkarsyad/hum/hum
+
+    Or go to: System Settings → Privacy & Security → Open Anyway
+  EOS
 end
