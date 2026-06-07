@@ -1,10 +1,10 @@
 cask "hum" do
-  version "1.0.0"
-  sha256 "cc342c69eca6c6eee83065d0e86a0bae2633f7de820cc69a068da13c0dbb512e"
+  version "1.2.0"
+  sha256 "fb28c979035f82ea96b487c42f3b44da14390bd085812c4d4d04f0be8db54e6d"
 
   url "https://github.com/rzkarsyad/Hum/releases/download/v#{version}/Hum-#{version}.dmg"
   name "Hum"
-  desc "Floating karaoke lyrics for Apple Music"
+  desc "Floating karaoke lyrics for Apple Music, Spotify, and browsers"
   homepage "https://github.com/rzkarsyad/Hum"
 
   depends_on macos: ">= :sequoia"
