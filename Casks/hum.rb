@@ -1,6 +1,6 @@
 cask "hum" do
-  version "1.2.0"
-  sha256 "fb28c979035f82ea96b487c42f3b44da14390bd085812c4d4d04f0be8db54e6d"
+  version "1.3.0"
+  sha256 "c0d540c2c6a2778c636cdb78250c66d73224c9eb3c39c29e367f51f192bcf7f6"
 
   url "https://github.com/rzkarsyad/Hum/releases/download/v#{version}/Hum-#{version}.dmg"
   name "Hum"
@@ -12,14 +12,7 @@ cask "hum" do
   app "Hum.app"
 
   zap trash: [
+    "~/Library/Application Support/Hum",
     "~/Library/Preferences/com.rzkarsyad.Hum.plist",
   ]
-
-  caveats <<~EOS
-    Hum is not notarized by Apple. If macOS blocks it on first launch:
-
-      brew install --cask --no-quarantine rzkarsyad/hum/hum
-
-    Or go to: System Settings → Privacy & Security → Open Anyway
-  EOS
 end
