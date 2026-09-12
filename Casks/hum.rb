@@ -1,6 +1,6 @@
 cask "hum" do
-  version "1.3.0"
-  sha256 "c0d540c2c6a2778c636cdb78250c66d73224c9eb3c39c29e367f51f192bcf7f6"
+  version "1.3.1"
+  sha256 "2bb207e880701b13af6306a91bbf2e0555dbfb34c1dab79b3616ac3ce641063e"
 
   url "https://github.com/rzkarsyad/Hum/releases/download/v#{version}/Hum-#{version}.dmg"
   name "Hum"
