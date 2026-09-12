@@ -7,7 +7,7 @@ cask "hum" do
   desc "Floating karaoke lyrics for Apple Music, Spotify, and browsers"
   homepage "https://github.com/rzkarsyad/Hum"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "Hum.app"
 
